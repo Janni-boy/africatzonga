@@ -1,0 +1,30 @@
+.list-container{
+    float: left;
+    width: 20%;
+}
+.list-container ul{
+    list-style: none;
+    text-overflow: ellipsis;
+    text-align: justify;
+    padding-left: 0%;
+}
+
+.list-container a{
+    color: snow;
+    text-decoration: none;
+    display: block;
+    border: 1px solid snow;
+    box-shadow:1px 1px 5px 0;
+    padding: 5px;
+    border-radius: 0.3em;
+    background-color: #333;
+}
+
+.list-container a:hover{
+    background-color: #2690d4;
+}
+
+#section{
+    float: left;
+    width: 80%;
+}

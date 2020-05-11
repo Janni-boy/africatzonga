@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-container, .nav-links, .cart{
+    display: flex;
+}
+
+.logo-container{
+    background: lightblue;
+    flex: 1;
+}
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+nav{
+    background: lightcyan;
+    flex: 1;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    color: mediumspringgreen;
+    font-size: 18px;
+    text-decoration: none;
+}
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+.intro-text h1{
+    font-size:44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color:#494964;
+}
+.cover{
+    flex: 1;
+}
+
+@media screen and (max-width: 480px){
+    .presentation{
+        flex-direction: column;
+    }
+
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+
+    header{
+        background-color: cornsilk;
+        box-shadow:1px 1px 5px 0;
+        position: fixed;
+        width: 100%;
+    
+    }
+    
+    
+    header a{
+        color:#000;
+    }
+    
+    
+    header ul{
+        margin:0;
+        padding: 0;
+        list-style:none;
+        overflow: hidden;
+        background-color: floralwhite;
+    
+    }
+    
+    header ul a{
+        display:block;
+        padding:20px;
+        border-right:1px solid cornflowerblue;
+        text-decoration: none;
+    }
+    
+    header ul a:hover{
+        background-color:lightskyblue;
+    }
+    
+    header .logo{
+        float:left;
+        display:block;
+        font-size: 3em;
+        padding: 10px 20px;
+    }
+
+    header .nav-links{
+        clear: both;
+        max-height: 0;
+        transition:max-height .2s ease-out;
+    }
+    
+    header .menu-icon{
+        border:1px solid lightgray;
+        float: right;
+        padding: 20px 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    header .menu-icon .nav-icon{
+        background: navy;
+        display:block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    
+    header .menu-icon .nav-icon:before{
+        background-color: navy;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top: 5px;
+    }
+    
+    header .menu-icon .nav-icon:after{
+        background-color: navy;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top:-5px;
+    }
+    
+    header .menu-btn{
+        display:none;
+    }
+    
+    header .menu-btn:checked ~ .menu{
+        max-height: 240px;
+    }
+    
+    header .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    
+    header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform:rotate(-45deg);
+        top:0;
+    }
+    
+    header .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top:0;
+    }
+}
+

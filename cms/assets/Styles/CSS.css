@@ -1,0 +1,46 @@
+body{
+		text-align:left;
+		background-color:steelblue;
+		font-size 40px;
+		color: black;
+		padding: 10px;
+		<--background-image: linear-gradient(lightskyblue, cyan);		
+}
+.signon{
+	margin-top: 0px;
+	float:left;
+	width:40%;
+	border: 7px solid:#ccc
+	padding-left: 10px
+}
+.Vision{
+	float:right;
+	width:40%;
+	margin-top:0px;
+	padding-right: 70px;
+}
+
+.vision{
+	float:left;
+	text-align:left;
+}
+.block{
+	background-color: white;
+	float:right;
+	text-align: left;
+	width:33%;
+	Padding:10px;
+	border-radius: 2em;
+	border: 3px solid navy;
+	margin-right: 3px; 
+}
+
+
+.intro{
+		float: left
+		text-align: centre;
+		font-size: 30px;
+		color:Blue;
+		bolder 1px 
+}
+
